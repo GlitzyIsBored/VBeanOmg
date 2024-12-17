@@ -1,0 +1,3 @@
+G:\Mayesha's Folder O Remorse\Documents\CODE\Random codes\Omg VBean Adventure\x64\Debug\raylib.dll
+G:\Mayesha's Folder O Remorse\Documents\CODE\Random codes\Omg VBean Adventure\x64\Debug\glfw3.dll
+G:\Mayesha's Folder O Remorse\Documents\CODE\Random codes\Omg VBean Adventure\Omg VBea.922e084c\x64\Debug\Omg VBea.7F986A2D.Up2Date

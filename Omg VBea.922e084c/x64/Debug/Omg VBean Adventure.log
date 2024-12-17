@@ -1,0 +1,6 @@
+﻿  bean.cpp
+G:\Mayesha's Folder O Remorse\Documents\CODE\Random codes\Omg VBean Adventure\bean.cpp(24,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+G:\Mayesha's Folder O Remorse\Documents\CODE\Random codes\Omg VBean Adventure\bean.cpp(24,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Omg VBean Adventure.vcxproj -> G:\Mayesha's Folder O Remorse\Documents\CODE\Random codes\Omg VBean Adventure\x64\Debug\Omg VBean Adventure.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
