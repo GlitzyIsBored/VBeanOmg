@@ -12,17 +12,26 @@ int main() {
 
     SetTargetFPS(144);
 
+    //TEXT PROPERTIES
+    const char* sigma = "Erm what the sigma";
+
+    const int fontSize = 20;
+
+    int textCentre = MeasureText(sigma, fontSize);
+
+    //WINDWO
     while (!WindowShouldClose()) {
         //KEY INPTU
-        if (IsKeyDown(KEY_RIGHT)) idekSpritePos.x += 7.0f;
-        if (IsKeyDown(KEY_LEFT)) idekSpritePos.x -= 7.0f;
-        if (IsKeyDown(KEY_UP)) idekSpritePos.y -= 6.0f;
-        if (IsKeyDown(KEY_DOWN)) idekSpritePos.y += 6.0f;
+        if (IsKeyDown(KEY_RIGHT) && idekSpritePos.x < screenWidth - idekSprite.width) idekSpritePos.x += 7.0f;
+        if (IsKeyDown(KEY_LEFT) && idekSpritePos.x > 0) idekSpritePos.x -= 7.0f;
+        if (IsKeyDown(KEY_UP) && idekSpritePos.y > 0) idekSpritePos.y -= 6.0f;
+        if (IsKeyDown(KEY_DOWN) && idekSpritePos.y < screenHeight - idekSprite.height) idekSpritePos.y += 6.0f;
 
         BeginDrawing();
             ClearBackground(RAYWHITE);
             DrawTexture(idekSprite, idekSpritePos.x, idekSpritePos.y, WHITE);
-            DrawText("Erm what the sigma", 300, 10, 20, PURPLE);
+            DrawText(sigma, (screenWidth - textCentre) / 2, 10, fontSize, PURPLE);
+            DrawFPS(10, 10);            
         EndDrawing();
     }
     UnloadTexture(idekSprite);
